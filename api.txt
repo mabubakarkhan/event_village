@@ -1,0 +1,77 @@
+domain.com = http://domain.com/
+Upload Path = http://domain.com/uploads/
+api:	url to hit
+arg:	url arguments
+req:	required fields
+opt:	optinal fields
+res:	responce in case of successfull
+err:	responce in case of any error
+not:	if any note with
+
+
+
+
+index:
+1.	Delete Account
+2.	login
+3.	Signup
+4.	Forgot Password
+5.	Events
+6.	Event
+7.	Wishlist
+8.	Create Wishlist
+9.	Remove Wishlist
+10.	Offers
+11.	Offer
+12.	Notifications
+13.	Notifications Status Change
+
+
+
+1.	Delete Account
+	api:	http://domain.com/api/delete-account?id=1
+	req:	{ id }
+
+2.	login
+	api:	http://domain.com/api/login?email=ali@khan.com&password=chor
+	req:	{ email, password }
+
+3.	Signup
+	api:	http://domain.com/api/signup?fname=ali&lname=khan&email=ali@khan.com&password=chor
+	req:	{ email, password }
+
+4.	Forgot Password
+	api:	http://domain.com/api/forgot-password?email=ali@khan.com
+	req:	{ email}
+
+5.	Events
+	api:	http://domain.com/api/events/status (all,1,0)
+	(1 for inside the village events)
+	(0 for outside the village events)
+	(whisListIds contain all ids of the events made in wishlist by the user)
+
+6.	Event
+	api:	http://domain.com/api/event/event_id
+
+7.	Wishlist
+	api:	http://domain.com/api/event-wishlist/user_id
+
+8.	Create Wishlist
+	api:	http://domain.com/api/create-event-wishlist?user_id=1&event_id=1
+	req:	{ user_id, event_id }
+
+9.	Remove Wishlist
+	api:	http://domain.com/api/remove-event-wishlist?user_id=1&event_id=1
+	req:	{ user_id, event_id }
+
+10.	Offers
+	api:	http://domain.com/api/offers/status (all,active,inactive)
+
+11.	Offer
+	api:	http://domain.com/api/offer/offer_id
+
+12.	Notifications
+	api:	http://domain.com/api/notifications/user_id
+
+13.	Notifications Status Change
+	api:	http://domain.com/api/notification-status/notification_id
